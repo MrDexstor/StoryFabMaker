@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricstory",
+  "version": "${version}",
+  "name": "FabricStory",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/user/FabricStory"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fabricstory/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.bananus.fabricstory.FabricStory"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}

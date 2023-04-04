@@ -1,0 +1,10 @@
+{
+  "item.fabricstory.restart_story": "Restart Story",
+  "item.fabricstory.npc_remove": "Remove NPC",
+  "item.fabricstory.npc_creator": "NPC Creator",
+  "item.fabricstory.npc_creator.create_npc": "§6NPC created successfully!",
+  "item.fabricstory.restart_story.reload": "Reloaded successfully!",
+  "item.fabricstory.restart_story.exists": "Stories folder exists!",
+  "item.fabricstory.restart_story.not_exists": "Stories folder successfully created!",
+  "itemGroup.fabricstory.fabric_story": "FabricStory"
+}
