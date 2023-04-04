@@ -36,10 +36,10 @@ public class StoryParser {
         File folderFile = storiesFolder.toFile();
         File stories = new File(folderFile, "stories");
         if (stories.exists()) {
-            player.sendMessage(new TranslatableTextContent("item.fabricstory.restart_story.exists"), false);
+            player.sendMessage(Text.translatable("item.fabricstory.restart_story.exists"), false);
         }
         else {
-            player.sendMessage(new TranslatableTextContent("item.fabricstory.restart_story.not_exists"), false);
+            player.sendMessage(Text.translatable("item.fabricstory.restart_story.not_exists"), false);
             stories.mkdir();
         }
     }
@@ -48,9 +48,9 @@ public class StoryParser {
         String storiesFolder = String.valueOf(FabricLoader.getInstance().getGameDir()) + "/stories";
         Story story = new Story(story_id, new File(storiesFolder, story_id), (ServerPlayerEntity) player);
         storiesLoaded.add(story);
-        File storiesData = new File(storiesFolder, "data.json");
+        File Data = new File(storiesFolder, "data.json");
         try {
-            storiesData.createNewFile();
+            Data.createNewFile();
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -59,7 +59,7 @@ public class StoryParser {
     }
 
     public static void loadStory(PlayerEntity player, String story_id) {
-
+        player.sendMessage(Text.of("Not ready!"), false);
     }
 
 }

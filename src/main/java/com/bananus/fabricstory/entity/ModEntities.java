@@ -6,12 +6,13 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class ModEntities {
     public static final EntityType<NPCEntity> NPC = Registry.register(
-            Registry.ENTITY_TYPE, new Identifier(FabricStory.MOD_ID, "npc"),
+            Registries.ENTITY_TYPE, new Identifier(FabricStory.MOD_ID, "npc"),
             FabricEntityTypeBuilder.create(SpawnGroup.MISC, NPCEntity::new)
                     .dimensions(EntityDimensions.fixed(1, 1)).build());
 }

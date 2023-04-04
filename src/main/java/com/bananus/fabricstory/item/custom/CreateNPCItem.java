@@ -8,7 +8,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.StringVisitable;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 
 public class CreateNPCItem extends Item {
@@ -21,7 +20,7 @@ public class CreateNPCItem extends Item {
         PlayerEntity player = context.getPlayer();
         context.getWorld().spawnEntity(new NPCEntity(ModEntities.NPC, context.getWorld()));
         assert player != null;
-        player.sendMessage(new TranslatableText("item.fabricstory.npc_creator.create_npc"), false);
+        player.sendMessage(Text.translatable("item.fabricstory.npc_creator.create_npc"), false);
         return super.useOnBlock(context);
     }
 }

@@ -6,5 +6,5 @@
   "item.fabricstory.restart_story.reload": "Reloaded successfully!",
   "item.fabricstory.restart_story.exists": "Stories folder exists!",
   "item.fabricstory.restart_story.not_exists": "Stories folder successfully created!",
-  "itemGroup.fabricstory.fabric_story": "FabricStory"
+  "itemGroup.fabricstory.storymaker": "StoryMaker"
 }
